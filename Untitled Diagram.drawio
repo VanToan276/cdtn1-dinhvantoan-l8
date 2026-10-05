@@ -1,0 +1,136 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="JnUFlrWQDaWQauAbUvMO">
+    <mxGraphModel dx="1201" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-48" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="520" width="520" x="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-49" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="khách hàng&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-52" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Lưu phản hồi khảo sát CSAT/NPS" vertex="1">
+          <mxGeometry height="80" width="180" x="180" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-54" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Marketing&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-55" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Xem CSAT/NPS theo thời gian" vertex="1">
+          <mxGeometry height="80" width="190" x="180" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-57" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Xem chi tiết phản hồi khảo sát" vertex="1">
+          <mxGeometry height="80" width="190" x="180" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-58" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Xem báo cáo tổng hợp CSAT/NPS&amp;nbsp;" vertex="1">
+          <mxGeometry height="80" width="190" x="180" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-59" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Xem CSAT/NPS theo trung tâm" vertex="1">
+          <mxGeometry height="80" width="190" x="425" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-60" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Xem CSAT/NPS theo kỹ thuật viên" vertex="1">
+          <mxGeometry height="80" width="190" x="440" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-61" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Lọc và so sánh CSAT/NPS&amp;nbsp;" vertex="1">
+          <mxGeometry height="70" width="170" x="460" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-62" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); text-decoration-line: inherit;&quot;&gt;Xuất báo cáo CSAT/NPS&amp;nbsp;&lt;/span&gt;" vertex="1">
+          <mxGeometry height="70" width="170" x="470" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-63" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-49" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mlJbpnqHrgKgtDvd_IPg-52" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-64" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-54" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mlJbpnqHrgKgtDvd_IPg-55" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="65" y="230" />
+            </Array>
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-65" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-54" style="endArrow=none;html=1;rounded=0;entryX=0.033;entryY=0.404;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="mlJbpnqHrgKgtDvd_IPg-57" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="110" y="260" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-66" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="&lt;div&gt;Ban giám đốc&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="30" x="50" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-67" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-66" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mlJbpnqHrgKgtDvd_IPg-58" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-68" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-66" style="endArrow=none;html=1;rounded=0;" target="mlJbpnqHrgKgtDvd_IPg-62" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="270" y="540" />
+            </Array>
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-69" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Quản lý trung tâm" vertex="1">
+          <mxGeometry height="60" width="30" x="740" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-72" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-59" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mlJbpnqHrgKgtDvd_IPg-69" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-73" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-60" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mlJbpnqHrgKgtDvd_IPg-69" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-74" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-61" style="endArrow=none;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mlJbpnqHrgKgtDvd_IPg-69" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-75" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-52" style="endArrow=classic;html=1;rounded=0;entryX=0.574;entryY=0.004;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.631;exitY=1.021;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;dashPattern=8 8;startSize=6;" target="mlJbpnqHrgKgtDvd_IPg-55" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="330" as="sourcePoint" />
+            <mxPoint x="380" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-76" connectable="0" parent="mlJbpnqHrgKgtDvd_IPg-75" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=-90;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="-0.3584" y="1" as="geometry">
+            <mxPoint x="-18" y="7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-77" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-52" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;dashPattern=8 8;" target="mlJbpnqHrgKgtDvd_IPg-59" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-78" connectable="0" parent="mlJbpnqHrgKgtDvd_IPg-77" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=30;" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.2941" y="-2" as="geometry">
+            <mxPoint x="-12" y="-24" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-79" edge="1" parent="1" source="mlJbpnqHrgKgtDvd_IPg-58" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;dashPattern=8 8;" target="mlJbpnqHrgKgtDvd_IPg-62" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="330" y="320" as="sourcePoint" />
+            <mxPoint x="380" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mlJbpnqHrgKgtDvd_IPg-80" connectable="0" parent="mlJbpnqHrgKgtDvd_IPg-79" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=25;" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" vertex="1">
+          <mxGeometry relative="1" x="0.266" y="1" as="geometry">
+            <mxPoint x="-13" y="-17" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
