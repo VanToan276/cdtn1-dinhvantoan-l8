@@ -1,0 +1,56 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="MqOPxNVf4sQfa5VzCMtl">
+    <mxGraphModel dx="1001" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 8;" value="" vertex="1">
+          <mxGeometry height="520" width="490" x="180" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;br&gt;Presentation Layer&lt;br&gt;Giao diện khảo sát / Dashboard / Báo cáo             &lt;div&gt;&lt;br/&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="310" x="270" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-8" edge="1" parent="1" source="qZoHibDeB4iQPeKUqS2t-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="qZoHibDeB4iQPeKUqS2t-5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Application / Business Layer&lt;div&gt;&amp;nbsp;- Xử lý khảo sát&lt;/div&gt;&lt;div&gt;- Tính CSAT/NPS&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Lọc / tổng hợp dữ liệu&lt;/div&gt;&lt;div&gt;- Phân quyền&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="310" x="270" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-9" edge="1" parent="1" source="qZoHibDeB4iQPeKUqS2t-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="425" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div&gt;Data Layer&amp;nbsp;&lt;/div&gt;&lt;div&gt;- Repository&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; -Truy cập dữ liệu&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="310" x="270" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-7" edge="1" parent="1" source="qZoHibDeB4iQPeKUqS2t-2" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="qZoHibDeB4iQPeKUqS2t-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="400" as="sourcePoint" />
+            <mxPoint x="350" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Hệ thống quản lý bảo hành" vertex="1">
+          <mxGeometry height="90" width="120" x="710" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-14" edge="1" parent="1" source="qZoHibDeB4iQPeKUqS2t-11" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="qZoHibDeB4iQPeKUqS2t-4" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="300" y="400" as="sourcePoint" />
+            <mxPoint x="350" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-15" connectable="0" parent="qZoHibDeB4iQPeKUqS2t-14" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=0;labelBackgroundColor=none;" value="phiếu bảo hành/&lt;div&gt;trạng thái đóng phiếu&lt;/div&gt;" vertex="1">
+          <mxGeometry relative="1" x="0.0654" y="-2" as="geometry">
+            <mxPoint x="4" y="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-16" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" value="&lt;br&gt;CSDL L8 – CSAT/NPS" vertex="1">
+          <mxGeometry height="80" width="65" x="395" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="qZoHibDeB4iQPeKUqS2t-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;HỆ THỐNG KHẢO SÁT HÀI LÒNG CSAT/NPS&lt;/font&gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="410" x="222.5" y="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
