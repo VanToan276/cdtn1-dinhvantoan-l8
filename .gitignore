@@ -1,7 +1,27 @@
-venv/
-__pycache__/
-.ipynb_checkpoints/
+
+# Dependencies
+node_modules/
+
+# Environment variables and secrets
 .env
+.env.*
+!.env.example
+
+# Logs
 *.log
+npm-debug.log*
+
+# Test output
+coverage/
+
+# Python environments and cache
+venv/
+.venv/
+__pycache__/
+
+# Large datasets and model files
 data/raw/
-*.parquet
+*.pkl
+*.joblib
+*.h5
+*.onnx
