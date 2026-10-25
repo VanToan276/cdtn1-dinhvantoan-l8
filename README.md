@@ -81,11 +81,6 @@ DB_NAME=smart_crm_l8
 DB_USER=postgres
 DB_PASSWORD=YOUR_POSTGRES_PASSWORD
 ```
-
-Thay `YOUR_POSTGRES_PASSWORD` bằng mật khẩu PostgreSQL của máy đang sử dụng. Không commit file `.env` hoặc chia sẻ mật khẩu thật.
-
-Nếu đã có file `.env`, không cần sao chép lại; hãy kiểm tra các giá trị hiện tại.
-
 ### Bước 5. Khởi động PostgreSQL
 
 Khởi động PostgreSQL bằng phương thức đã cấu hình trên máy, chẳng hạn Windows Service, pgAdmin hoặc Docker Desktop.
