@@ -28,9 +28,16 @@ async function findAll() {
 
 async function findById(id) {
   const result = await pool.query(
-    `SELECT *
-     FROM survey_response
-     WHERE response_id = $1`,
+    `SELECT
+       sr.response_id, sr.survey_id, sr.csat_score, sr.nps_score,
+       sr.comment, sr.responded_at, s.survey_token, t.ticket_code,
+       c.center_name, tech.full_name AS technician_name
+     FROM survey_response sr
+     JOIN survey s ON s.survey_id = sr.survey_id
+     JOIN ticket t ON t.ticket_id = s.ticket_id
+     JOIN service_center c ON c.center_id = t.center_id
+     LEFT JOIN technician tech ON tech.technician_id = t.technician_id
+     WHERE sr.response_id = $1`,
     [id]
   );
 

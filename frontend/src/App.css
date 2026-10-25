@@ -1,0 +1,90 @@
+#root {
+  min-height: 100vh;
+}
+.app-container {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0 16px;
+}
+.app-header {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  color: #fff;
+  background: linear-gradient(135deg, #123c69, #176b87);
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(18, 60, 105, .16);
+}
+.app-header h1 {
+  margin: 0 0 8px;
+  color: #fff;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  letter-spacing: 0;
+}
+.app-header p { color: #e2f3fa; }
+.app-navigation { display: flex; flex-wrap: wrap; gap: 10px; }
+.app-navigation button, button {
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 15px;
+  background: #176b87;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: .95rem;
+}
+.app-navigation button { background: rgba(255,255,255,.15); border: 1px solid rgba(255,255,255,.35); }
+button:hover { filter: brightness(.94); }
+button:disabled { opacity: .6; cursor: not-allowed; }
+.app-footer { padding: 24px 8px 8px; color: #64748b; text-align: center; font-size: .9rem; }
+.survey-page, .response-list-page, .report-page {
+  background: #fff;
+  padding: clamp(18px, 3vw, 30px);
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px rgba(15, 23, 42, .05);
+  margin-bottom: 20px;
+}
+.survey-heading { margin: 22px 0; }
+.survey-heading h2, .report-page h2 { color: #123c69; margin: 12px 0 8px; font-size: 1.45rem; }
+.survey-page form { display: grid; gap: 12px; }
+input, textarea, select { font: inherit; }
+.survey-page input[type="text"], .survey-page textarea, .report-filter input {
+  width: 100%; box-sizing: border-box; border: 1px solid #cbd5e1;
+  border-radius: 8px; padding: 10px 12px; background: #fff; color: #172033;
+}
+.score-fieldset { border: 1px solid #dbe4ee; border-radius: 10px; padding: 14px; margin: 8px 0; }
+.score-fieldset legend { padding: 0 6px; font-weight: 650; }
+.score-options, .nps-options { display: flex; flex-wrap: wrap; gap: 12px; margin: 12px 0; }
+.score-options label, .nps-options label { display: flex; align-items: center; gap: 5px; }
+.score-hint { color: #64748b; font-size: .9rem; }
+.response-list-heading { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
+.response-filter, .report-filter { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; margin: 20px 0; }
+.response-filter label, .report-filter label { display: grid; gap: 6px; }
+.filter-title { font-weight: 650; }
+.response-table-wrapper, .trend-table-wrapper { overflow-x: auto; margin: 16px 0; }
+.response-table, .trend-table-wrapper table { width: 100%; border-collapse: collapse; background: #fff; }
+.response-table th, .response-table td, .trend-table-wrapper th, .trend-table-wrapper td { padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: left; white-space: normal; }
+.response-table th, .trend-table-wrapper th { background: #f1f5f9; color: #24364b; }
+.response-pagination { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
+.active-page { background: #123c69; }
+.response-count { color: #64748b; margin-top: 10px; }
+.detail-overlay { position: fixed; inset: 0; z-index: 20; background: rgba(15,23,42,.55); display: grid; place-items: center; padding: 16px; }
+.detail-dialog { background: white; color: #172033; width: min(650px, 100%); max-height: 85vh; overflow: auto; padding: 24px; border-radius: 14px; }
+.detail-header { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.detail-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 18px; }
+.detail-fields > div { background: #f8fafc; border-radius: 8px; padding: 12px; overflow-wrap: anywhere; }
+.error-message { color: #b91c1c; }
+.kpi-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 14px; margin: 20px 0 28px; }
+.kpi-card { border: 1px solid #dbe4ee; background: #f8fbff; border-radius: 12px; padding: 18px; }
+.kpi-card h3 { margin: 0 0 10px; font-size: .95rem; color: #52647a; }
+.kpi-card p { font-size: 1.8rem; font-weight: 750; color: #123c69; }
+.date-range { display: flex; gap: 10px; flex-wrap: wrap; }
+@media (max-width: 720px) {
+  .app-container { width: min(100% - 20px, 1180px); }
+  .app-header { padding: 18px; }
+  .kpi-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .detail-fields { grid-template-columns: 1fr; }
+}

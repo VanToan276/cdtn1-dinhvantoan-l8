@@ -2,6 +2,7 @@
 const express = require('express');
 const cors = require('cors');
 const surveyResponseRoutes = require('./routes/surveyResponseRoutes');
+const metricsRoutes = require('./routes/metricsRoutes');
 
 const app = express();
 
@@ -16,6 +17,7 @@ app.get('/health', (req, res) => {
 });
 
 app.use('/api/survey-responses', surveyResponseRoutes);
+app.use('/api/metrics', metricsRoutes);
 
 // Xử lý endpoint không tồn tại
 app.use((req, res) => {

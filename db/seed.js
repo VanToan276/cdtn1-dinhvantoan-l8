@@ -102,8 +102,26 @@ async function seed() {
       [surveyId, 5, 9, 'Dịch vụ tốt, nhân viên hỗ trợ nhiệt tình.']
     );
 
+    // 7. Khảo sát SENT để có thể kiểm thử luồng tiếp nhận phản hồi.
+    result = await client.query(
+      `INSERT INTO ticket
+         (ticket_code, customer_id, center_id, technician_id, status, closed_at)
+       VALUES ($1, $2, $3, $4, $5, CURRENT_TIMESTAMP)
+       ON CONFLICT (ticket_code) DO UPDATE SET status = EXCLUDED.status
+       RETURNING ticket_id`,
+      ['TKT-L8-0002', customerId, centerId, technicianId, 'CLOSED']
+    );
+    const openTicketId = result.rows[0].ticket_id;
+    await client.query(
+      `INSERT INTO survey (ticket_id, survey_token, sent_at, expires_at, status)
+       VALUES ($1, $2, CURRENT_TIMESTAMP, CURRENT_TIMESTAMP + INTERVAL '30 days', 'SENT')
+       ON CONFLICT (ticket_id) DO UPDATE
+       SET status = CASE WHEN survey.status = 'RESPONDED' THEN survey.status ELSE 'SENT' END`,
+      [openTicketId, 'SURVEY-L8-0002']
+    );
+
     await client.query('COMMIT');
-    console.log('Seed thành công: đã có dữ liệu Smart CRM mẫu.');
+    console.log('Seed thành công: dữ liệu mẫu đã có phản hồi và một khảo sát SENT (TKT-L8-0002).');
   } catch (error) {
     await client.query('ROLLBACK');
     console.error('Seed thất bại:', error.message);
