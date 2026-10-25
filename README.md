@@ -177,6 +177,7 @@ Các tài liệu có thể được lưu trong thư mục `docs/`:
 
 | Tài liệu | Nội dung |
 |---|---|
+<<<<<<< HEAD
 | `docs/usecase.drawio` | Sơ đồ Use Case |
 | `docs/Architecture.drawio` | Sơ đồ kiến trúc hệ thống |
 | `docs/ERD.drawio` | Mô hình dữ liệu |
@@ -236,3 +237,38 @@ git add README.md
 git commit -m "docs: update project setup and progress"
 ```
 
+=======
+| `docs/srs.md` | Đặc tả yêu cầu phần mềm: phạm vi, User Story, FR, NFR và quy tắc nghiệp vụ. |
+| `docs/usecase.drawio` | Sơ đồ Use Case và các tác nhân/chức năng chính. |
+| `docs/Architecture.drawio` | Sơ đồ kiến trúc hệ thống và các thành phần chính. |
+| `docs/ERD.drawio` | Mô hình dữ liệu và quan hệ giữa các thực thể. |
+| `docs/wireframe.png` | Bản phác thảo giao diện các màn hình chính. |
+| `docs/api-contract.md` | Đặc tả hợp đồng API cho Track SE. |
+| `docs/ai-disclosure.md` | Khai báo việc sử dụng công cụ AI trong quá trình làm bài. |
+
+## Kiểm thử Track SE
+
+Chạy unit test tại thư mục gốc:
+
+```bash
+npm test
+```
+
+Bộ test `test/surveyResponseService.test.js` gồm 8 test cho validation CSAT/NPS, giá trị biên, tiếp nhận phản hồi theo mã phiếu, khảo sát không ở trạng thái `SENT`, khảo sát hết hạn và ID không hợp lệ. Các test dùng repository/database giả lập nên không cần PostgreSQL.
+
+## Luồng tiếp nhận phản hồi
+
+Sau khi cấu hình `.env`, chạy migration và seed:
+
+```bash
+npm run db:migrate
+npm run db:seed
+npm run dev
+```
+
+Seed tạo dữ liệu phản hồi mẫu `TKT-L8-0001` và một khảo sát đang chờ phản hồi `TKT-L8-0002`. Dùng `TKT-L8-0002` trên màn hình tiếp nhận để kiểm thử gửi phản hồi; mã `TKT-L8-0001` đã được phản hồi nên API sẽ từ chối gửi trùng.
+
+## API báo cáo
+
+`GET /api/metrics/csat-nps` hỗ trợ query tùy chọn `fromDate` và `toDate`. CSAT được tính là tỷ lệ điểm CSAT từ 4 đến 5; NPS là tỷ lệ người quảng bá (9–10) trừ tỷ lệ người chê bai (0–6).
+>>>>>>> fcc406d (docs: update project README)
