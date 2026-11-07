@@ -290,3 +290,6 @@ Các thay đổi thiết kế so với BT1 tập trung giải quyết những đ
 Các phần thiết kế đã phù hợp được giữ nguyên định hướng nhằm tránh thay đổi không cần thiết. Những nội dung có liên quan đến dữ liệu, API và quy tắc nghiệp vụ cần được đối chiếu thống nhất giữa SRS, Use Case, ERD, SQL DDL, Wireframe, Architecture Diagram và mã nguồn.
 
 Tài liệu này là cơ sở ghi nhận lý do và phạm vi thay đổi thiết kế so với BT1, đồng thời hỗ trợ việc rà soát tính nhất quán trong quá trình hoàn thiện dự án.
+# NHẬT KÝ THAY ĐỔI THIẾT KẾ SO VỚI BT2
+-đã bổ sung ảnh trạng thái và ảnh giao diện chạy end to end
+-đã bổ sung trang đăng nhập
